@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran HEMATIK</title>
+    <link rel="shortcut icon" href="./image/LOGO HEMATIK.jpeg" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #40ae91;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            padding: 0px;
+            display: grid;
+            margin-bottom: 0px;
+        }
+
+        table.form-table {
+            text-align: left;
+            margin: 0vh auto;
+            background-color: #e1ede9;
+            padding: 2em;
+            border-radius: 3%;
+        }
+
+        table.header {
+            display: grid;
+            background-color: #65b8b1;
+            color: white;
+            margin: 0vh auto;
+            text-align: center;
+            padding: 0.7em;
+            border-radius: 3%;
+            margin-bottom: 0.6em;
+            justify-items: center;
+            align-content: center;
+            width: 100%;
+        }
+
+        table tr td {
+            padding: 0.5em;
+        }
+
+        input[type="text"] {
+            width: 100%;
+        }
+
+        input[type="tel"] {
+            width: 100%;
+        }
+
+        input[type="email"] {
+            width: 100%;
+        }
+
+        input[type="password"] {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        input[type="date"] {
+            width: 100%;
+        }
+
+        input[type="month"] {
+            width: 100%;
+        }
+
+        input[type="week"] {
+            width: 100%;
+        }
+
+        input[type="number"] {
+            width: 100%;
+        }
+
+        input[type="time"] {
+            width: 100%;
+        }
+
+        input[type="datetime-local"] {
+            width: 100%;
+        }
+
+        input[type="search"] {
+            width: 100%;
+        }
+
+        input[type="url"] {
+            width: 100%;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 0.5em;
+            background-color: #65b8b1;
+            color: white;
+            border: none;
+            border-radius: 5%;
+            cursor: pointer;
+        }
+
+        form {
+            margin: 1em 10vh 1vh 10vh;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table class="header">
+        <tr>
+            <td>
+                <h1>FORM PENDAFTARAN CALON ANGGOTA HIMATIK</h1>
+            </td>
+        </tr>
+    </table>
+    <form action="" method="post">
+        <table class="form-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="hidden" name="status" value="Belum Dikonfirmasi">
+                        <label for="nim">NIM: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="nim" name="nim" required><br>
+                    </td>
+                    <td>
+                        <label for="nama_calon">Nama Lengkap: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="nama_calon" name="nama_calon" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jurusan">Program Jurusan:</label>
+                    </td>
+                    <td>
+                        <select name="jurusan" id="jurusan" required>
+                            <option value="default">------- Pilih Program Studi -------</option>
+                            <option value="Teknik Informatika dan Komputer">Teknik Informatika</option>
+                            <option value="Teknik Multimedia Digital">Teknik Multimedia Digital</option>
+                            <option value="Teknik Multimedia dan Jaringan">Teknik Multimedia dan Jaringan</option>
+                            <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="telp">No. Telp:</label>
+
+                    </td>
+                    <td>
+                        <input type="tel" name="No. Telp" id="telp"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        <label class="alamatl" for="alamat">Alamat:</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea name="alamat" id="alamat" cols="55" rows="3"></textarea><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required><br>
+                    </td>
+                    <td>
+                        <label for="pe">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="Password Email" id="pe"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="jenisKelamin">Jenis Kelamin:
+                        </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="jenisKelamin" required id="jenisKelamin" value="Laki-laki">Laki-laki
+                        <input type="radio" name="jenisKelamin" required id="jenisKelamin" value="Perempuan">Perempuan
+                        <br>
+                    </td>
+                    <td>
+                        <label for="tanggalLahir">Tanggal Lahir:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="tanggalLahir" id="tanggalLahir" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="waktuSaatDaftar">Waktu Saat Pendaftaran:</label>
+                    </td>
+                    <td>
+                        <input type="datetime-local" name="waktuPendaftaran" id="waktuSaatDaftar" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bulanFavorit">Bulan Favorit:</label>
+                    </td>
+                    <td>
+                        <input type="month" name="Bulan Favorit" id="bulanFavorit"><br>
+                    </td>
+                    <td>
+                        <label for="wakfav">Waktu Favorit:</label>
+                    </td>
+                    <td>
+                        <input type="time" name="Waktu FAvorit" id="wakfav"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="minFav">Minggu Favorit:</label>
+                    </td>
+                    <td>
+                        <input type="week" name="Minggu Favorit" id="minFav"><br>
+                    </td>
+                    <td>
+                        <label for="warfav">Warna Favorit:</label>
+                    </td>
+                    <td>
+                        <input type="color" name="Warna Favorit" id="warfav"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="angfav">Angka Favorit (1-9):</label>
+                    </td>
+                    <td>
+                        <input type="range" name="Angaka Favorit" id="angfav" min="1" max="9"><br>
+                    </td>
+                    <td>
+                        <label for="bukfav">Cari Buku Favorit Anda:</label>
+                    </td>
+                    <td>
+                        <input type="search" name="Buku Favorit" id="bukfav"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td c0lspan="1">
+                        <label for="hobi">Hobi Anda:</label>
+                    </td>
+                    <td colspan="3">
+                        | <input type="checkbox" name="Olahraga" id="hobi"> Olahraga |
+                        <input type="checkbox" name="Membaca" id="hobi"> Membaca |
+                        <input type="checkbox" name="Musik" id="hobi"> Musik |
+                        <input type="checkbox" name="Game" id="hobi"> Game |
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bersaudara">Jumlah Saudara:</label>
+                    </td>
+                    <td>
+                        <input type="number" name="Bersaudara" id="bersaudara">
+                    </td>
+                    <td>
+                        <label for="ffktm">File Foto KTM:</label>
+                    </td>
+                    <td>
+                        <input type="file" name="File Foto KTM" id="ffktm"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="url">Website anda:</label>
+                    </td>
+                    <td>
+                        <input type="url" name="URL" id="url"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="image" src="./image/Wes Monten.png" width="50" alt="Gambar Logo">
+                    </td>
+                    <td colspan="1">
+                        <input type="reset" value="Hapus Semua">
+                        <input type="submit" value="Kirim Data">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>

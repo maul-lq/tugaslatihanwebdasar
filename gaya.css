@@ -1,0 +1,66 @@
+#intro {
+    background-color: #f1f11f;
+    border-radius: 20px;
+    border: solid 2px #fadeee;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: small;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@property --warna1 {
+    syntax: "<color>";
+    initial-value: rgb(255, 17, 0);
+    description: "Warna awal";
+    inherits: false;
+}
+
+@property --warna2 {
+    syntax: "<color>";
+    initial-value: #fafafa;
+    description: "Warna akhir";
+    inherits: false;
+}
+
+@keyframes gradient {
+    0%,
+    100% {
+        --warna1: rgb(255, 242, 0);
+        --warna2: rgb(0, 255, 135);
+    }
+
+    50% {
+        --warna1: rgb(255, 17, 0);
+        --warna2: #fafafa;
+    }
+}
+
+.ex1 {
+    background: linear-gradient(var(--warna1), var(--warna2));
+    animation: gradient 3s linear infinite;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan - 25 Februari 2025 (CSS -> Image)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3vh;
+            text-align: justify;
+            color: #fafafa;
+        }
+
+        body {
+            padding: 2em;
+            background-image: url("./image/bg.png");
+            background-repeat: round;
+        }
+
+        .gambar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 10vh;
+            margin-top: -0.5em;
+        }
+
+        h2 {
+            font-size: 5vh;
+        }
+
+        p.aerolite-1 {
+            font-family: Aerolite;
+            text-align: justify;
+        }
+
+        p.aerolite-2 *,
+        p.aerolite-2 {
+            font-family: Aerolite Sky;
+            text-align: justify;
+        }
+
+        img {
+            border-radius: 2em;
+        }
+
+        a:link {
+            color: rgb(210, 233, 110);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #fafafa;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        p.ptop {
+            text-align: center;
+        }
+    </style>
+
+    <map name="imgMap">
+        <area rel="noopener" target="_blank" alt="Topi" title="Topi" href="https://en.wikipedia.org/wiki/Hat"
+            coords="69,73,51,79,47,63,53,39,69,19,90,3,150,0,170,14,181,22,195,32,202,40,210,53,213,69,204,77,191,71,177,69,163,74,145,66,122,57,95,53,76,56,68,63"
+            shape="poly">
+        <area rel="noopener" target="_blank" alt="Rambut" title="Rambut" href="https://en.wikipedia.org/wiki/Hair"
+            coords="61,78,36,88,60,106,53,120,68,141,79,168,82,187,90,164,91,141,86,116,97,112,113,118,129,120,133,103,146,99,171,102,181,115,172,143,174,168,186,148,203,137,208,117,215,95,232,89,211,83,197,77,171,73,131,62,111,56,92,53,76,63"
+            shape="poly">
+        <area rel="noopener" target="_blank" alt="Mata Kiri" title="Mata Kiri" href="https://en.wikipedia.org/wiki/Human_eye"
+            coords="89,118,100,118,122,125,114,134,101,136,89,131" shape="poly">
+        <area rel="noopener" target="_blank" alt="Mata Kanan" title="Mata Kanan" href="https://en.wikipedia.org/wiki/Human_eye"
+            coords="141,120,147,115,156,116,164,118,167,124,162,131,153,131,143,131" shape="poly">
+        <area rel="noopener" target="_blank" alt="Badan" title="Badan" href="https://en.wikipedia.org/wiki/Torso"
+            coords="50,190,37,243,38,256,229,256,226,222,217,187,201,177,180,175,162,171,151,167,144,177,126,180,115,174,110,166,102,173,93,177,72,178,60,184,56,187"
+            shape="poly">
+        <area rel="noopener" target="_blank" alt="Mulut" title="Mulut" href="https://en.wikipedia.org/wiki/Human_mouth" coords="118,150,134,150,142,151,139,162,129,162,118,158"
+            shape="poly">
+    </map>
+</head>
+
+<body>
+    <h1 id="web-title">Web Areolite</h1>
+    <div class="gambar">
+        <img src="./image/gambar_anime.png" alt="Gambar Anime Pake Topi Rambut Kuning" width="256" height="256"
+            usemap="#imgMap">
+    </div>
+    <h2 id="toc">Table of Contents</h2>
+    <p>
+        <a href="#toc">- Dafatar Isi</a><br>
+        <a href="#intro">- Introduction</a><br>
+        <a href="#font-models">- Font Models</a><br>
+        <a href="#about">- About</a><br>
+        <a href="./Latihan - 18 Februari 2025.html" rel="noopener" target="_blank" title="Link menuju ke latihan sebelumnya!">- Website sebelumnya</a>
+    </p>
+    <h2 id="intro">Introduction</h2>
+    <p>
+        This website will showcase the font Aerolite. Aerolite is a font that is designed to be used in a variety of
+        applications. It is a versatile font that can be used in many different ways. You can download the font for free
+        with this link, <a href="https://www.dafont.com/aerolite.font" title="Download Aerolite Fonts!">Click Here To
+            Download!</a>
+    </p><br>
+    <h2 id="font-models">Font Models</h2>
+    <p class="aerolite-1">
+        <b>Aerolite Font</span></b><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus itaque, in, amet explicabo eveniet accusamus
+        obcaecati sapiente aperiam molestiae reprehenderit, asperiores excepturi cum error distinctio consequuntur
+        possimus beatae dolores earum.
+    </p><br>
+    <p class="aerolite-2">
+        <b>Aerolite Sky</b><br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, quo? Inventore maxime sint harum deleniti
+        libero. Itaque nulla dicta, dignissimos porro iusto quidem esse iste aliquam architecto ducimus veniam
+        doloribus?
+    </p><br>
+    <h2 id="gambar-gambar">Kumpulan Gambar</h2>
+    <picture>
+        <source srcset="./image/image-forest-1.png.jpg" media="(max-width: 600px)" sizes="500w">
+        <source srcset="./image/image-forest-2.png" media="(max-width: 900px)" sizes="400w">
+        <img src="./image/image-forest-1.png." alt="Gambar Hutan" width="60%">
+    </picture>
+    <h2 id="about">About</h2>
+    <p>
+        Nama saya adalah Maulana Ibrahim, saya tinggal di Depok, saat ini saya sedang menempuh pendidikan di Politeknik
+        Negeri Jakarta. <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eum suscipit expedita nesciunt qui molestiae
+        dolore sit nihil minima amet error cumque voluptatum dolorum eos dolor voluptate, architecto adipisci ut.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eum suscipit expedita nesciunt qui molestiae
+        dolore sit nihil minima amet error cumque voluptatum dolorum eos dolor voluptate, architecto adipisci ut.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eum suscipit expedita nesciunt qui molestiae
+        dolore sit nihil minima amet error cumque voluptatum dolorum eos dolor voluptate, architecto adipisci ut. <br><br>
+        <a href="mailto:maulana.ibrhaim.tik24@stu.pnj.ac.id">Email Me!</a>
+    </p><br>
+    <p class="ptop"><a href="#web-title">Kembali Ke Atas!</a></p>
+</body>
+
+</html>
